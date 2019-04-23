@@ -1,0 +1,17 @@
+.page-section {
+  padding: 1.2rem 0;
+
+  &--b-padding-large {
+    padding-bottom: 4rem;
+  }
+
+  @mixin atMedium{
+    padding: 4.5rem 0;
+  }
+
+  &--blue {
+    background: linear-gradient(to top right, rgba($mainBlue, .95) 10%, 50%, rgba(35, 137, 195, .75) 90%);
+
+  }
+
+}

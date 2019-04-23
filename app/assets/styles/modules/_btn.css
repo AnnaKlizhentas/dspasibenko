@@ -1,0 +1,23 @@
+.btn {
+  text-decoration: none;
+  color: #fff;
+  background-color: $mainBlue;
+  font-weight: 300;
+  padding: .8rem 1.2rem;
+  display: inline-block;
+
+
+  &--orange {
+    background-color: $mainLightBlue;
+  }
+
+  &--large {
+
+    padding: 1.1rem 1.7rem;
+
+    @mixin atSmall {
+      font-size: 1.25rem;
+    }
+
+  }
+}
