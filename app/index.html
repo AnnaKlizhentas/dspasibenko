@@ -13,25 +13,23 @@
   <header class="site-header">
     <div class="wrapper">
       <div class="site-header__logo">
-        <img src="assets/images/icons/logrange_logo.png">
+        <a href="index.html"><img src="assets/images/icons/logrange.svg"></a>
       </div>
       <div>
 
         <div class="site-header__menu-icon">
-
+          <div class="site-header__menu-icon__middle"></div>
         </div>
 
         <div class="site-header__menu-content">
           <div class="site-header__btn-container">
-            <a class="btn" href="#">Get in Touch</a>
+            <a class="btn" href="#contact-form">Get in Touch</a>
           </div>
           <nav class="primary-nav primary-nav--pull-right">
             <ul>
-              <!--li><a href="#docs">Main</a></li-->
-              <li><a href="#solutions">Docs</a></li>
-              <li><a href="#pricing">Blog</a></li>
-              <li><a href="#testimonials">Download</a></li>
-              <!--li><a href="#contact">Contact</a></li-->
+              <li><a href="docs.html">Docs</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Download</a></li>
             </ul>
           </nav>
         </div>
@@ -40,20 +38,12 @@
   </header>
 
   <div class="large-hero">
-
-    <picture>
-         <source srcset="assets/images/background-1920.jpg 1920w" media="(min-width: 1380px)">
-         <source srcset="assets/images/background-1280.jpg 1280w" media="(min-width: 990px)">
-         <!--source srcset="assets/images/hero--small.jpg 990w, assets/images/hero--small-hi-dpi.jpg 1980w" media="(min-width: 640px)"-->
-         <img srcset="assets/images/background-640.jpg 640w" alt="Logrange: streaming database" class="large-hero__image">
-    </picture>
-
     <div class="large-hero__text-content">
       <div class="wrapper">
-        <h1 class="large-hero__title">Logrange</h1>
         <h2 class="large-hero__subtitle">Streaming database</h2>
         <p class="large-hero__description">Logrange is highly performant streaming database for aggregation streams of records like application logs, system metrics, audit logs etc. from thousands of sources.</p>
-        <p><a class="btn btn--orange btn--large" href="#">Try out</a></p>
+        <p><a class="btn btn--lightBlue btn--large" href="index.html">Get started</a></p>
+        <p><a class="btn btn--large" href="https://github.com/logrange">View on GitHub</a></p>
       </div>
     </div>
   </div>
@@ -125,20 +115,24 @@
     <div class="wrapper">
 
       <h2 class="section-title"><i class="material-icons md-icons section-title__icon">cloud_download</i>Get <strong>Logrange</strong></h2>
+      <div class="generic-content-container">
+        <p>Logrange is under active development and it is not production ready yet. It is 100% open-source, so you can <a href="https://github.com/logrange">try it right now</a>.</p>
+
+      </div>
         <div class="tab">
-          <button class="tab__tablinks" onclick="open-code-sample(event, 'Kubernetes')">Kubernetes</button>
-          <button class="tab__tablinks" onclick="open-code-sample(event, 'Standalone')">Standalone</button>
+          <button id="tabKubernetes" class="tab__tablinks">Kubernetes</button>
+          <button id="tabStandalone" class="tab__tablinks">Standalone</button>
         </div>
 
-<!-- Tab content -->
-        <div id="Kubernetes" class="tabcontent">
+<!-- Tab content onclick="open-code-sample(event, 'Kubernetes')" onclick="open-code-sample(event, 'Standalone')"-->
+        <div id="Kubernetes" class="tab__tabcontent">
           <h3>Kubernetes</h3>
-          <p>code code code code</p>
+          <p><code>$ code code code code</code></p>
         </div>
 
-        <div id="Standalone" class="tabcontent">
+        <div id="Standalone" class="tab__tabcontent">
           <h3>Standalone</h3>
-          <p>code code code code</p>
+          <p><code>$ code code code code</code></p>
         </div>
 
       </div>
@@ -155,15 +149,28 @@
         <p>Do you want to have something like anomalies prediction?</p>
         <p>Or may be you want to improve your system monitoring and analytics. Contact us and let us help you to resolve this problems.</p>
     </div>
+
+    <form action=" " method=" ">
+      <label for="name" placeholder="Enter your name">Name</label>
+      <input type="text" name="name" id="name">
+      <br>
+      <label for="email" placeholder="Enter your email address">Email</label>
+      <input type="text" name="email" id="email">
+      <br>
+      <label for="message" placeholder="Leave us a message">Message</label>
+      <input type="text" name="message" id="message">
+      <br>
+    </form>
     </div>
   </div>
 
 
   <footer class="site-footer">
     <div class="wrapper">
-      <p><span class="site-footer__text">Copyright &copy; 2019 Logrange. All rights reserved.</span><a class="btn btn--orange" href="#">Get Logrange</a></p>
+      <p><span class="site-footer__text">Copyright &copy; 2019 Logrange. All rights reserved.</span><a class="btn btn--lightBlue" href="#">Get Logrange</a></p>
     </div>
   </footer>
   <script src="/temp/scripts/App.js"></script>
+
 </body>
 </html>
