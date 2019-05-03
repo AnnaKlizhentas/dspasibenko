@@ -6,7 +6,21 @@
   padding: .7rem 1.1rem;
   display: inline-block;
   border-radius: 5px;
+  box-shadow: 3px 3px 7px rgba($mainDarkBlue, .55);
+  margin-bottom: 10px;
+  cursor: pointer;
 
+  &:hover {
+    box-shadow: 4px 4px 8px rgba($mainDarkBlue, .75);
+  }
+
+
+  &--uppercase {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
 
   &--lightBlue {
     background-color: $mainLightBlue;
@@ -21,6 +35,5 @@
     @mixin atSmall {
       font-size: 1.25rem;
     }
-
   }
 }

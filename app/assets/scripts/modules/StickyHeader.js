@@ -5,6 +5,7 @@ class StickyHeader {
   constructor() {
     this.siteHeader = $(".site-header");
     this.headerTriggerElement = $(".large-hero__subtitle");
+    this.headerLinks = $(".primary-nav a");
     this.createHeaderWaypoint();
   }
 
@@ -14,6 +15,7 @@ class StickyHeader {
       element: this.headerTriggerElement[0],
       handler: function() {
         that.siteHeader.toggleClass("site-header--dark");
+        that.headerLinks.toggleClass("lightBlue");
       }
     });
   }

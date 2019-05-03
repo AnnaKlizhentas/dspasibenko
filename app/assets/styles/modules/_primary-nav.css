@@ -1,6 +1,7 @@
 .primary-nav {
   padding-top: 10px;
 
+
   @mixin atMedium {
     padding-top: 0;
   }
@@ -45,10 +46,12 @@
     padding: 5px 8px;
     background-color: rgba($mainBlue, .45);
 
-
     @mixin atMedium {
       padding: 12px 0;
       background-color: transparent;
+    }
+    &.lightBlue {
+      color: $mainLightBlue;
     }
   }
 }

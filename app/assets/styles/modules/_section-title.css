@@ -9,6 +9,10 @@
     color: #ffff;
   }
 
+  &--centered {
+    text-align: center;
+  }
+
   @mixin atSmall {
     font-size: 1.75rem;
   }

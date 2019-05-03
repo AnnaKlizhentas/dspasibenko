@@ -29,8 +29,8 @@ class Tab {
       $("#Standalone").removeClass("tab__tabcontent--is-visible");
     }
     else {
-      $("#tabStandalone").toggleClass("active");
-      $("#Standalone").toggleClass("tab__tabcontent--is-visible");
+      $("#tabStandalone").addClass("active");
+      $("#Standalone").addClass("tab__tabcontent--is-visible");
       $("#tabKubernetes").removeClass("active");
       $("#Kubernetes").removeClass("tab__tabcontent--is-visible");
     }

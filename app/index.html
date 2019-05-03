@@ -56,7 +56,7 @@
 
       <div class="row row--gutters-large generic-content-container">
 
-        <div class="row__medium-6">
+        <div class="row__medium-4">
 
           <div class="feature-item">
             <i class="material-icons md-icons feature-item__icon">import_export</i>
@@ -69,6 +69,14 @@
             <h3 class="feature-item__title">Highly performant</h3>
             <p>Accepting millions of records or hundred megabytes per second from thousands of data sources.</p>
           </div>
+        </div>
+
+        <div class="row__medium-4">
+          <div class="feature-item">
+            <i class="material-icons md-icons feature-item__icon">code</i>
+            <h3 class="feature-item__title">Open Source</h3>
+            <p>Written entirely in Go, Logrange is available under the Apache 2.0 license for easy adoption. [Run it yourself](link), or [use pre-build installations](link).</p>
+          </div>
 
           <div class="feature-item">
             <i class="material-icons md-icons feature-item__icon">language</i>
@@ -76,16 +84,10 @@
             <p> Logrange’s performance doesn't depend on the database size either it is 100Kb or 100Tb of data. Saving as much data as you need.</p>
           </div>
 
+
         </div>
 
-        <div class="row__medium-6">
-
-          <div class="feature-item">
-            <i class="material-icons md-icons feature-item__icon">code</i>
-            <h3 class="feature-item__title">Open Source</h3>
-            <p>Written entirely in Go, Logrange is available under the Apache 2.0 license for easy adoption. [Run it yourself](link), or [use pre-build installations](link).</p>
-          </div>
-
+        <div class="row__medium-4">
           <div class="feature-item">
             <i class="material-icons md-icons feature-item__icon">call_split</i>
             <h3 class="feature-item__title">Aggregate Data from Everywhere</h3>
@@ -103,10 +105,10 @@
     </div>
   </div>
 
-  <div id="how-it-works" class="page-section page-section--blue page-section--b-padding-large">
+  <div id="how-it-works" class="page-section page-section--blue">
     <div class="wrapper">
 
-      <h2 class="section-title section-title--white"><i class="material-icons md-icons md-icons--white section-title__icon">help_outline</i>How it works?</h2>
+      <h2 class="section-title section-title--white section-title--centered"><!--<i class="material-icons md-icons md-icons--white section-title__icon">help_outline</i>-->How it works?</h2>
       <img class="how-it-works__image" src="assets/images/logrange-structure.png" alt="Logrange Structure">
     </div>
   </div>
@@ -114,7 +116,7 @@
   <div id="get-logrange" class="page-section">
     <div class="wrapper">
 
-      <h2 class="section-title"><i class="material-icons md-icons section-title__icon">cloud_download</i>Get <strong>Logrange</strong></h2>
+      <h2 class="section-title"><!--<i class="material-icons md-icons section-title__icon">cloud_download</i>-->Get <strong>Logrange</strong></h2>
       <div class="generic-content-container">
         <p>Logrange is under active development and it is not production ready yet. It is 100% open-source, so you can <a href="https://github.com/logrange">try it right now</a>.</p>
 
@@ -124,14 +126,13 @@
           <button id="tabStandalone" class="tab__tablinks">Standalone</button>
         </div>
 
-<!-- Tab content onclick="open-code-sample(event, 'Kubernetes')" onclick="open-code-sample(event, 'Standalone')"-->
         <div id="Kubernetes" class="tab__tabcontent">
-          <h3>Kubernetes</h3>
+          <p><code>$ kubernetes code code code</code></p>
           <p><code>$ code code code code</code></p>
         </div>
 
         <div id="Standalone" class="tab__tabcontent">
-          <h3>Standalone</h3>
+          <p><code>$ standalone code code code</code></p>
           <p><code>$ code code code code</code></p>
         </div>
 
@@ -142,7 +143,7 @@
     <div class="wrapper">
 
       <div class="generic-content-container">
-        <h2 class="section-title"><i class="material-icons md-icons section-title__icon">mail_outline</i>Contact Us</h2>
+        <h2 class="section-title"><!--<i class="material-icons md-icons section-title__icon">mail_outline</i>-->Contact Us</h2>
         <p>Should you reject to save your system logs due to storage cost or the logs size?</p>
         <p>Do you considering to have security alerts and notifications for your system?</p>
         <p>You have multiple monitoring tools for your system, but still think that having one place with all kinds of analytics is a good idea?</p>
@@ -150,19 +151,26 @@
         <p>Or may be you want to improve your system monitoring and analytics. Contact us and let us help you to resolve this problems.</p>
     </div>
 
-    <form action=" " method=" ">
-      <label for="name" placeholder="Enter your name">Name</label>
-      <input type="text" name="name" id="name">
-      <br>
-      <label for="email" placeholder="Enter your email address">Email</label>
-      <input type="text" name="email" id="email">
-      <br>
-      <label for="message" placeholder="Leave us a message">Message</label>
-      <input type="text" name="message" id="message">
-      <br>
+    <form class="contact-us-form" action=" " method="POST">
+      <label class="label" for="name">Name</label>
+      <div class="contact-us-form__field">
+        <input type="text" tabindex="1" name="name" id="name" required>
+      </div>
+      <label class="label" for="email">Email</label>
+      <div class="contact-us-form__field">
+        <input type="email" tabindex="2" name="email" id="email" required>
+      </div>
+      <label class="label" for="message">Message</label>
+      <div class="contact-us-form__field">
+        <textarea type="text" tabindex="3" placeholder="Write your message here" name="message" id="message" required></textarea>
+      </div>
+
+      <input class="btn btn--large btn--uppercase" type="submit" value="Submit">
+
     </form>
-    </div>
   </div>
+</div>
+
 
 
   <footer class="site-footer">

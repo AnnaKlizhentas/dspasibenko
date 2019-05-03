@@ -3,16 +3,14 @@
   position: relative;
 
   &__text-content {
-    /*position: absolute;
-    top: 50%;*/
-    /*transform: translateY(-50%);*/
     left: 0;
     width: 100%;
     text-align: left;
-    padding-top: 75px;
+    padding-top: 5.5rem;
+    padding-bottom: 2rem;
 
     @mixin atSmall {
-      padding-top: 120px;
+      padding-top: 7.5rem;
     }
   }
 

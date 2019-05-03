@@ -3,7 +3,7 @@
   font-size: 48px;
 
   @mixin atSmall {
-    font-size: 64px;
+    font-size: 56px;
   }
 
   &--white {

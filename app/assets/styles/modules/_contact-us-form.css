@@ -1,0 +1,73 @@
+.contact-us-form {
+
+  @mixin clearfix;
+
+  &__field {
+    position: relative;
+    margin: .8rem 0;
+
+    @mixin atSmall {
+      margin: 1.2rem;
+    }
+
+    input {
+      padding: 10px;
+      width: 280px;
+      border: solid #ccc;
+
+      @mixin atSmall {
+        width: 500px;
+      }
+
+      @mixin atMedium {
+        width: 700px;
+      }
+
+      @mixin atLarge {
+        width: 900px;
+      }
+    }
+
+    input:focus {
+      outline: 0;
+      border: 2px solid $mainBlue;
+      box-shadow: 4px 4px 10px rgba($mainDarkBlue, .3);
+      transition: all .3s ease-out;
+    }
+
+    textarea {
+      padding: 10px;
+      width: 280px;
+      border: solid #ccc;
+      height: 200px;
+
+      @mixin atSmall {
+        width: 500px;
+      }
+
+      @mixin atMedium {
+        width: 700px;
+      }
+
+      @mixin atLarge {
+        width: 900px;
+      }
+    }
+
+    textarea:focus {
+      outline: 0;
+      border: 2px solid $mainBlue;
+      box-shadow: 4px 4px 10px rgba($mainDarkBlue, .3);
+      transition: all .3s ease-out;
+    }
+    /*padding: 10px;
+    border: solid #ccc;*/
+
+  }
+
+  label {
+    font-weight: 300;
+   }
+
+
+}
