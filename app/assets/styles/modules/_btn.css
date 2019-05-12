@@ -1,7 +1,7 @@
 .btn {
   text-decoration: none;
   color: #fff;
-  background-color: $mainBlue;
+  background-color: $mainDarkBlue;
   font-weight: 300;
   padding: .7rem 1.1rem;
   display: inline-block;
@@ -9,6 +9,7 @@
   box-shadow: 3px 3px 7px rgba($mainDarkBlue, .55);
   margin-bottom: 10px;
   cursor: pointer;
+  transition: all .3s ease-out;
 
   &:hover {
     box-shadow: 4px 4px 8px rgba($mainDarkBlue, .75);
@@ -23,8 +24,7 @@
   }
 
   &--lightBlue {
-    background-color: $mainLightBlue;
-    color: $mainBlue;
+    background: $mainLightBlue;
 
   }
 
@@ -34,6 +34,20 @@
 
     @mixin atSmall {
       font-size: 1.25rem;
+    }
+  }
+
+  &--gitHub {
+    position: relative;
+    padding-left: 3.1rem;
+
+    &__icon {
+      display: block;
+      position: absolute;
+      top: 18%;
+      left: 5%;
+      margin: 0 auto;
+
     }
   }
 }

@@ -2,12 +2,21 @@
 
  @mixin clearfix;
 
-
   @mixin atMedium {
     &__medium-4 {
       float: left;
       width: 33.33%;
     }
+
+    &__medium-6 {
+      float: left;
+      width: 50%;
+    }
+  }
+
+  &--overlap {
+    position: relative;
+    padding-bottom: 10rem;
   }
 
 
@@ -16,7 +25,7 @@
   }
 
   &--gutters-large {
-    margin-right: -30px;
+    margin-right: -100px;
   }
 
   &--gutters > div {
@@ -25,7 +34,7 @@
   }
 
   &--gutters-large > div {
-    padding-right: 30px;
+    padding-right: 100px;
   }
 
 }

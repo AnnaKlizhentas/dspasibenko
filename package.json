@@ -5,6 +5,7 @@
     "build": "webpack"
   },
   "dependencies": {
+    "clipboard": "^2.0.4",
     "jquery": "^3.4.0",
     "jquery-smooth-scroll": "^2.2.0",
     "lazysizes": "^4.1.4",

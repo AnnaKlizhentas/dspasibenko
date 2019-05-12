@@ -1,12 +1,19 @@
 .md-icons {
-  color: $mainBlue;
-  font-size: 48px;
+  color: $mainLightBlue;
+  font-size: 32px;
+  box-shadow: 0  10px 10px rgba($mainLightBlue, .45);
 
   @mixin atSmall {
-    font-size: 56px;
+    font-size: 40px;
+  }
+
+  &--small {
+    font-size: 32px;
   }
 
   &--white {
-    color: #ffff;
+    color: #fff;
   }
+
+
 }

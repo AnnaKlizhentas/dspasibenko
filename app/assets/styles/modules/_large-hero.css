@@ -1,6 +1,45 @@
 .large-hero {
-  border-bottom: 10px solid $mainBlue;
+  border-bottom: 10px solid $mainDarkBlue;
   position: relative;
+
+  &__title {
+    color: $mainDarkBlue;
+    font-size: 2.25rem;
+    font-weight: 400;
+    margin-bottom: 0.5rem;
+
+    @mixin atSmall {
+      font-size: 2.5rem;
+    }
+
+    @mixin atMedium {
+      font-size: 2.75rem;
+    }
+
+    @mixin atLarge {
+      font-size: 3.65rem;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 400;
+    font-size: 1.6rem;
+    margin: 0;
+    color: $mainDarkBlue;
+
+    @mixin atSmall {
+      font-size: 1.75rem;
+    }
+
+    @mixin atMedium {
+      font-size: 2rem;
+    }
+
+    @mixin atLarge {
+      font-size: 2.25rem;
+    }
+  }
+
 
   &__text-content {
     left: 0;
@@ -14,42 +53,22 @@
     }
   }
 
-  &__subtitle {
-    font-weight: 300;
-    font-size: 1.5rem;
-    margin: 0;
-    text-transform: uppercase;
-
-
-    @mixin atSmall {
-      font-size: 1.75rem;
-    }
-
-    @mixin atMedium {
-      font-size: 2rem;
-    }
-
-    @mixin atLarge {
-      font-size: 2.5rem;
-    }
-
-  }
 
   &__description {
-    font-size: 1.1rem;
-    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 300;
     max-width: 30rem;
     margin-left: auto;
     margin-right: auto;
-    line-height: 1.7;
+    line-height: 1.45;
 
     @mixin atSmall {
-      font-size: 1.75rem;
+      font-size: 1.1rem;
       max-width: 75rem;
     }
 
     @mixin atLarge {
-      font-size: 2rem;
+      font-size: 1.2rem;
       max-width: 85rem;
     }
 

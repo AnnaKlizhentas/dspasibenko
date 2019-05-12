@@ -27,12 +27,24 @@ class Tab {
       $("#Kubernetes").addClass("tab__tabcontent--is-visible");
       $("#tabStandalone").removeClass("active");
       $("#Standalone").removeClass("tab__tabcontent--is-visible");
+      $("#tabDocker").removeClass("active");
+      $("#Docker").removeClass("tab__tabcontent--is-visible");
     }
-    else {
+    else if (clickedTabId == "tabStandalone") {
       $("#tabStandalone").addClass("active");
       $("#Standalone").addClass("tab__tabcontent--is-visible");
       $("#tabKubernetes").removeClass("active");
       $("#Kubernetes").removeClass("tab__tabcontent--is-visible");
+      $("#tabDocker").removeClass("active");
+      $("#Docker").removeClass("tab__tabcontent--is-visible");
+    }
+    else {
+      $("#tabDocker").addClass("active");
+      $("#Docker").addClass("tab__tabcontent--is-visible");
+      $("#tabKubernetes").removeClass("active");
+      $("#Kubernetes").removeClass("tab__tabcontent--is-visible");
+      $("#tabStandalone").removeClass("active");
+      $("#Standalone").removeClass("tab__tabcontent--is-visible");
     }
   }
 }

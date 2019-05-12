@@ -2,8 +2,12 @@
   font-size: 1.5rem;
   font-weight: 300;
   text-align: left;
-  color: $mainBlue;
-  text-transform: uppercase;
+  color: $mainDarkBlue;
+  font-weight: 400;
+
+  &--small-margin {
+    margin: 1.25rem 0;
+  }
 
   &--white {
     color: #ffff;
@@ -25,7 +29,7 @@
     font-weight: 500;
   }
 
-  &__icon {
+  /*&__icon {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -39,5 +43,5 @@
       display: inline-block;
       margin-bottom: 0;
     }
-  }
+  }*/
 }
